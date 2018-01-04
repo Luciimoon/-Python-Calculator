@@ -13,8 +13,6 @@ print(x.split())
 num = '3 + 5'
 print(list(num))
 num = list(num)
-#y = [x.strip(' ') for x in num]
-#print(y)
 z = [x for x in num if x != ' ']
 print(z)
 
@@ -25,17 +23,15 @@ num.insert(0,str(x))
 print(num)
 
 # selection test
-num = ['3','+','4','dog','cat','im','a','furry']
+num = ['3','+','4','dog','cat','im','a','cat']
 print(num[:2])
 
-if ('furry' in num[4:]):
+if ('cat' in num[4:]):
     print('awooo')
 else:
     print('*sad wolf face*')
     
 # re.split test
-#test2 = ',;'
-#test = [',',' ',';']
 x = '10 + 3+2'
 print(re.split(',|;| ',x))
 
