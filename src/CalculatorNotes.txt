@@ -1,0 +1,42 @@
+# Index Test
+x = "cat"
+if (x[2] == "t"):
+    print(x)
+else:
+    print("fail")
+
+# .split method test
+x = '5 + 3'
+print(x.split())
+
+# deleting empty elements in list
+num = '3 + 5'
+print(list(num))
+num = list(num)
+#y = [x.strip(' ') for x in num]
+#print(y)
+z = [x for x in num if x != ' ']
+print(z)
+
+# .insert method test
+num = ['3','+','4']
+x = 299
+num.insert(0,str(x))
+print(num)
+
+# selection test
+num = ['3','+','4','dog','cat','im','a','furry']
+print(num[:2])
+
+if ('furry' in num[4:]):
+    print('awooo')
+else:
+    print('*sad wolf face*')
+    
+# re.split test
+#test2 = ',;'
+#test = [',',' ',';']
+x = '10 + 3+2'
+print(re.split(',|;| ',x))
+
+#print(re.split('; |, |\*|\n',text))
