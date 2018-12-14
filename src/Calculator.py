@@ -1,4 +1,4 @@
-from pip._vendor.distlib.compat import raw_input
+
 Running = True
 
 def simplify(num, msg):
@@ -42,10 +42,10 @@ def calculate(msg):
     print(cal)
 
 while (Running):
-    x = list(raw_input('equation?'))
+    x = list(input('equation?'))
     calculate(x)
 
-    GoAgain = raw_input("\ndo you want to go again?").lower()
+    GoAgain = input("\ndo you want to go again?").lower()
     if (GoAgain == "yes" or GoAgain == "y"):
         Running = True
     elif (GoAgain == "no" or GoAgain == "n"):
