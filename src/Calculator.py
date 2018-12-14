@@ -42,7 +42,7 @@ def calculate(msg):
     print(cal)
 
 
-while (Running):
+while Running:
     x = list(input('equation?'))
     calculate(x)
 
